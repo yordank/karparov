@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Йордан Петров — Портфолио</title>
+  <meta name="description" content="Лична визитка и портфолио на Йордан Петров.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="noise-overlay"></div>
+
+  <header class="site-header">
+    <nav class="nav container">
+      <a href="#top" class="logo">Й<span>.</span>П</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Отвори меню" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">За мен</a></li>
+        <li><a href="#skills">Умения</a></li>
+        <li><a href="#projects">Проекти</a></li>
+        <li><a href="#contact">Контакти</a></li>
+      </ul>
+      <button class="theme-toggle" id="themeToggle" aria-label="Смени тема">
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z"/></svg>
+      </button>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero container">
+      <p class="eyebrow reveal">Здравей, аз съм</p>
+      <h1 class="reveal">Йордан Петров</h1>
+      <p class="hero-role reveal">Разработчик &amp; създател на digital продукти</p>
+      <p class="hero-text reveal">
+        Изграждам бързи, чисти и добре обмислени уебсайтове и приложения.
+        Тук ще намериш кратко резюме за мен, уменията ми и избрани проекти.
+      </p>
+      <div class="hero-actions reveal">
+        <a href="#projects" class="btn btn-primary">Виж проектите</a>
+        <a href="#contact" class="btn btn-ghost">Свържи се с мен</a>
+      </div>
+    </section>
+
+    <section id="about" class="about container">
+      <div class="section-head">
+        <span class="section-num">01</span>
+        <h2>За мен</h2>
+      </div>
+      <div class="about-grid">
+        <p class="about-text">
+          Казвам се Йордан и се занимавам с разработка на софтуер и уебсайтове.
+          Обичам да превръщам идеи в работещи продукти — от бърз прототип до
+          завършено, поддържано решение. Внимавам за детайла, добрата
+          структура на кода и удобството на потребителя.
+        </p>
+        <ul class="about-facts">
+          <li><strong>Базиран в</strong><span>България</span></li>
+          <li><strong>Фокус</strong><span>Web development</span></li>
+          <li><strong>Наличност</strong><span>Отворен за проекти</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="skills" class="skills container">
+      <div class="section-head">
+        <span class="section-num">02</span>
+        <h2>Умения</h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <h3>Frontend</h3>
+          <p>HTML, CSS, JavaScript, React</p>
+        </div>
+        <div class="skill-card">
+          <h3>Backend</h3>
+          <p>Node.js, API дизайн, бази данни</p>
+        </div>
+        <div class="skill-card">
+          <h3>Инструменти</h3>
+          <p>Git, Docker, CI/CD</p>
+        </div>
+        <div class="skill-card">
+          <h3>Дизайн</h3>
+          <p>UI/UX основи, responsive дизайн</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="projects container">
+      <div class="section-head">
+        <span class="section-num">03</span>
+        <h2>Проекти</h2>
+      </div>
+      <div class="projects-grid">
+        <article class="project-card">
+          <div class="project-num">01</div>
+          <h3>Име на проект</h3>
+          <p>Кратко описание какъв проблем решава проектът и какви технологии си използвал.</p>
+          <div class="project-tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
+          <a href="#" class="project-link">Виж проекта →</a>
+        </article>
+        <article class="project-card">
+          <div class="project-num">02</div>
+          <h3>Име на проект</h3>
+          <p>Кратко описание какъв проблем решава проектът и какви технологии си използвал.</p>
+          <div class="project-tags"><span>React</span><span>API</span></div>
+          <a href="#" class="project-link">Виж проекта →</a>
+        </article>
+        <article class="project-card">
+          <div class="project-num">03</div>
+          <h3>Име на проект</h3>
+          <p>Кратко описание какъв проблем решава проектът и какви технологии си използвал.</p>
+          <div class="project-tags"><span>Node.js</span><span>DB</span></div>
+          <a href="#" class="project-link">Виж проекта →</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="contact container">
+      <div class="section-head">
+        <span class="section-num">04</span>
+        <h2>Контакти</h2>
+      </div>
+      <div class="contact-content">
+        <p class="contact-lead">Имаш проект или идея? Пиши ми — с удоволствие ще го обсъдим.</p>
+        <a href="mailto:yordankp@gmail.com" class="contact-email">yordankp@gmail.com</a>
+        <div class="social-links">
+          <a href="#" aria-label="GitHub">GitHub</a>
+          <a href="#" aria-label="LinkedIn">LinkedIn</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer container">
+    <p>© <span id="year"></span> Йордан Петров. Всички права запазени.</p>
+    <a href="#top" class="back-to-top">Нагоре ↑</a>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
