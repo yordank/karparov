@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://yordank.github.io/claude_example/sitemap.xml
