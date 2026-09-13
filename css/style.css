@@ -214,6 +214,32 @@ section { padding-block: 96px; }
 .section-head h2 { font-size: clamp(1.6rem, 3vw, 2.2rem); }
 
 /* ---------- About ---------- */
+.about-photo {
+  margin: 0 0 40px;
+}
+.about-photo img {
+  width: 100%;
+  aspect-ratio: 21 / 9;
+  object-fit: cover;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+.about-photo figcaption {
+  margin-top: 10px;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.photo-credit a {
+  color: var(--text-muted);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.photo-credit a:hover { color: var(--accent); }
+
 .about-grid {
   display: grid;
   grid-template-columns: 1.4fr 1fr;
