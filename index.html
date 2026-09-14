@@ -23,54 +23,57 @@
 
   <header class="site-header">
     <nav class="nav container">
-      <a href="#top" class="logo">J<span>.</span>K</a>
+      <a href="#top" class="logo" data-i18n="nav.logo">J<span>.</span>K</a>
       <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
       <ul class="nav-links" id="navLinks">
-        <li><a href="#about">About</a></li>
-        <li><a href="#values">Values</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about" data-i18n="nav.about">About</a></li>
+        <li><a href="#values" data-i18n="nav.values">Values</a></li>
+        <li><a href="#skills" data-i18n="nav.skills">Skills</a></li>
+        <li><a href="#projects" data-i18n="nav.projects">Projects</a></li>
+        <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
       </ul>
-      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
-        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
-        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z"/></svg>
-      </button>
+      <div class="nav-controls">
+        <button class="lang-toggle" id="langToggle" aria-label="Switch language">BG</button>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z"/></svg>
+        </button>
+      </div>
     </nav>
   </header>
 
   <main id="top">
     <section class="hero container">
-      <p class="eyebrow reveal">Hi, I'm</p>
-      <h1 class="reveal">Jordan Karparov</h1>
-      <p class="hero-role reveal">Developer, Bitcoin advocate &amp; marathon runner</p>
-      <p class="hero-text reveal">
+      <p class="eyebrow reveal" data-i18n="hero.eyebrow">Hi, I'm</p>
+      <h1 class="reveal" data-i18n="hero.name">Jordan Karparov</h1>
+      <p class="hero-role reveal" data-i18n="hero.role">Developer, Bitcoin advocate &amp; marathon runner</p>
+      <p class="hero-text reveal" data-i18n="hero.text">
         I build software, run long distances, and speak up for decentralized
         money and animal rights. Politically independent, consistent in
         principles.
       </p>
       <div class="hero-actions reveal">
-        <a href="#projects" class="btn btn-primary">View projects</a>
-        <a href="#contact" class="btn btn-ghost">Get in touch</a>
+        <a href="#projects" class="btn btn-primary" data-i18n="hero.viewProjects">View projects</a>
+        <a href="#contact" class="btn btn-ghost" data-i18n="hero.getInTouch">Get in touch</a>
       </div>
     </section>
 
     <section id="about" class="about container">
       <div class="section-head">
         <span class="section-num">01</span>
-        <h2>About</h2>
+        <h2 data-i18n="about.heading">About</h2>
       </div>
       <figure class="about-photo">
         <img src="assets/plovdiv.jpg" alt="The Ancient Roman Theatre of Philippopolis in Plovdiv, Bulgaria" loading="lazy" width="960" height="602">
         <figcaption>
-          Plovdiv, Bulgaria — home turf.
-          <span class="photo-credit">Photo: <a href="https://commons.wikimedia.org/wiki/File:Antique-theater-plovdiv.jpg" target="_blank" rel="noopener">Edal Anton Lefterov</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="noopener">CC BY-SA 3.0</a></span>
+          <span data-i18n="about.photoCaption">Plovdiv, Bulgaria — home turf.</span>
+          <span class="photo-credit"><span data-i18n="about.photoCreditLabel">Photo:</span> <a href="https://commons.wikimedia.org/wiki/File:Antique-theater-plovdiv.jpg" target="_blank" rel="noopener">Edal Anton Lefterov</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="noopener">CC BY-SA 3.0</a></span>
         </figcaption>
       </figure>
       <div class="about-grid">
-        <p class="about-text">
+        <p class="about-text" data-i18n="about.text">
           I'm Jordan — a software developer based in Bulgaria who believes
           technology, personal responsibility, and clear principles go hand
           in hand. I'm a strong advocate for Bitcoin and sound money, I care
@@ -79,10 +82,10 @@
           code, you'll usually find me training for the next marathon.
         </p>
         <ul class="about-facts">
-          <li><strong>Based in</strong><span>Plovdiv, Bulgaria</span></li>
-          <li><strong>Politics</strong><span>Independent</span></li>
-          <li><strong>Advocates for</strong><span>Bitcoin &amp; animal rights</span></li>
-          <li><strong>Runs</strong><span>Marathons</span></li>
+          <li><strong data-i18n="about.facts.basedIn.label">Based in</strong><span data-i18n="about.facts.basedIn.value">Plovdiv, Bulgaria</span></li>
+          <li><strong data-i18n="about.facts.politics.label">Politics</strong><span data-i18n="about.facts.politics.value">Independent</span></li>
+          <li><strong data-i18n="about.facts.advocates.label">Advocates for</strong><span data-i18n="about.facts.advocates.value">Bitcoin &amp; animal rights</span></li>
+          <li><strong data-i18n="about.facts.runs.label">Runs</strong><span data-i18n="about.facts.runs.value">Marathons</span></li>
         </ul>
       </div>
     </section>
@@ -90,34 +93,34 @@
     <section id="values" class="values container">
       <div class="section-head">
         <span class="section-num">02</span>
-        <h2>What I Stand For</h2>
+        <h2 data-i18n="values.heading">What I Stand For</h2>
       </div>
       <div class="values-grid">
         <div class="value-card">
           <div class="value-icon value-icon-btc">₿</div>
-          <h3>Bitcoin</h3>
-          <p>Sound, decentralized money — free from political control and central banks.</p>
+          <h3 data-i18n="values.bitcoin.title">Bitcoin</h3>
+          <p data-i18n="values.bitcoin.desc">Sound, decentralized money — free from political control and central banks.</p>
         </div>
         <div class="value-card">
           <div class="value-icon">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="16.5" rx="5" ry="4"/><circle cx="5" cy="9" r="2"/><circle cx="10" cy="5" r="2"/><circle cx="15" cy="5" r="2"/><circle cx="19" cy="9" r="2"/></svg>
           </div>
-          <h3>Animal Rights</h3>
-          <p>The ethical treatment of animals and stronger legal protections for them.</p>
+          <h3 data-i18n="values.animalRights.title">Animal Rights</h3>
+          <p data-i18n="values.animalRights.desc">The ethical treatment of animals and stronger legal protections for them.</p>
         </div>
         <div class="value-card">
           <div class="value-icon">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v18M12 3l-7 4M12 3l7 4M5 7l-3 6a3 3 0 0 0 6 0zM19 7l-3 6a3 3 0 0 0 6 0zM8 21h8"/></svg>
           </div>
-          <h3>Politically Independent</h3>
-          <p>No party affiliation. Every issue judged on its own merits, not on tribal lines.</p>
+          <h3 data-i18n="values.independent.title">Politically Independent</h3>
+          <p data-i18n="values.independent.desc">No party affiliation. Every issue judged on its own merits, not on tribal lines.</p>
         </div>
         <div class="value-card">
           <div class="value-icon">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 3v18M6 4h11l-2 3 2 3H6"/></svg>
           </div>
-          <h3>Marathon Runner</h3>
-          <p>Training and racing long distance — discipline earned one mile at a time.</p>
+          <h3 data-i18n="values.marathon.title">Marathon Runner</h3>
+          <p data-i18n="values.marathon.desc">Training and racing long distance — discipline earned one mile at a time.</p>
         </div>
       </div>
     </section>
@@ -125,24 +128,24 @@
     <section id="skills" class="skills container">
       <div class="section-head">
         <span class="section-num">03</span>
-        <h2>Skills</h2>
+        <h2 data-i18n="skills.heading">Skills</h2>
       </div>
       <div class="skills-grid">
         <div class="skill-card">
-          <h3>Frontend</h3>
-          <p>HTML, CSS, JavaScript, React</p>
+          <h3 data-i18n="skills.frontend.title">Frontend</h3>
+          <p data-i18n="skills.frontend.desc">HTML, CSS, JavaScript, React</p>
         </div>
         <div class="skill-card">
-          <h3>Backend</h3>
-          <p>Node.js, API design, databases</p>
+          <h3 data-i18n="skills.backend.title">Backend</h3>
+          <p data-i18n="skills.backend.desc">Node.js, API design, databases</p>
         </div>
         <div class="skill-card">
-          <h3>Tools</h3>
-          <p>Git, Docker, CI/CD</p>
+          <h3 data-i18n="skills.tools.title">Tools</h3>
+          <p data-i18n="skills.tools.desc">Git, Docker, CI/CD</p>
         </div>
         <div class="skill-card">
-          <h3>Design</h3>
-          <p>UI/UX fundamentals, responsive design</p>
+          <h3 data-i18n="skills.design.title">Design</h3>
+          <p data-i18n="skills.design.desc">UI/UX fundamentals, responsive design</p>
         </div>
       </div>
     </section>
@@ -150,29 +153,29 @@
     <section id="projects" class="projects container">
       <div class="section-head">
         <span class="section-num">04</span>
-        <h2>Projects</h2>
+        <h2 data-i18n="projects.heading">Projects</h2>
       </div>
       <div class="projects-grid">
         <article class="project-card">
           <div class="project-num">01</div>
           <h3>Copy Trading Example</h3>
-          <p>A demo application for copy trading — automatically replicating trades across accounts.</p>
+          <p data-i18n="projects.copyTrading.desc">A demo application for copy trading — automatically replicating trades across accounts.</p>
           <div class="project-tags"><span>JavaScript</span></div>
-          <a href="https://github.com/yordank/copy-trading-example" class="project-link" target="_blank" rel="noopener">View on GitHub →</a>
+          <a href="https://github.com/yordank/copy-trading-example" class="project-link" target="_blank" rel="noopener" data-i18n="projects.viewOnGithub">View on GitHub →</a>
         </article>
         <article class="project-card">
           <div class="project-num">02</div>
           <h3>AI Assistant</h3>
-          <p>An AI assistant for automated responses and tasks, built with JavaScript.</p>
+          <p data-i18n="projects.aiAssistant.desc">An AI assistant for automated responses and tasks, built with JavaScript.</p>
           <div class="project-tags"><span>JavaScript</span><span>AI</span></div>
-          <a href="https://github.com/yordank/AI-Assistant" class="project-link" target="_blank" rel="noopener">View on GitHub →</a>
+          <a href="https://github.com/yordank/AI-Assistant" class="project-link" target="_blank" rel="noopener" data-i18n="projects.viewOnGithub">View on GitHub →</a>
         </article>
         <article class="project-card">
           <div class="project-num">03</div>
           <h3>BTCNotar</h3>
-          <p>A web application for notarizing data via Bitcoin.</p>
+          <p data-i18n="projects.btcNotar.desc">A web application for notarizing data via Bitcoin.</p>
           <div class="project-tags"><span>HTML</span></div>
-          <a href="https://github.com/yordank/BTCNotar" class="project-link" target="_blank" rel="noopener">View on GitHub →</a>
+          <a href="https://github.com/yordank/BTCNotar" class="project-link" target="_blank" rel="noopener" data-i18n="projects.viewOnGithub">View on GitHub →</a>
         </article>
       </div>
     </section>
@@ -180,10 +183,10 @@
     <section id="contact" class="contact container">
       <div class="section-head">
         <span class="section-num">05</span>
-        <h2>Contact</h2>
+        <h2 data-i18n="contact.heading">Contact</h2>
       </div>
       <div class="contact-content">
-        <p class="contact-lead">Have a project or idea? Reach out — I'd love to talk about it.</p>
+        <p class="contact-lead" data-i18n="contact.lead">Have a project or idea? Reach out — I'd love to talk about it.</p>
         <div class="social-links">
           <a href="https://github.com/yordank" target="_blank" rel="noopener" aria-label="GitHub">GitHub</a>
         </div>
@@ -192,10 +195,11 @@
   </main>
 
   <footer class="site-footer container">
-    <p>© <span id="year"></span> Jordan Karparov. All rights reserved.</p>
-    <a href="#top" class="back-to-top">Back to top ↑</a>
+    <p>© <span id="year"></span> <span data-i18n="footer.name">Jordan Karparov</span>. <span data-i18n="footer.rights">All rights reserved.</span></p>
+    <a href="#top" class="back-to-top" data-i18n="footer.backToTop">Back to top ↑</a>
   </footer>
 
+  <script src="js/i18n.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

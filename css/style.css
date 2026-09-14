@@ -127,6 +127,30 @@ img { max-width: 100%; display: block; }
   transition: transform 0.25s ease, opacity 0.25s ease;
 }
 
+.nav-controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.lang-toggle {
+  display: grid;
+  place-items: center;
+  height: 38px;
+  padding: 0 14px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--bg-elevated);
+  color: var(--text);
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 0.85rem;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+  transition: border-color 0.2s ease, color 0.2s ease;
+}
+.lang-toggle:hover { border-color: var(--accent); color: var(--accent); }
+
 .theme-toggle {
   display: grid;
   place-items: center;
