@@ -43,6 +43,9 @@ const translations = {
     },
     projects: {
       heading: 'Projects',
+      latest: 'Latest project',
+      tofiQuant: { desc: 'Quant trading — a systematic, rules-based strategy on ApeX Omni perpetual futures, run as a non-custodial on-chain vault you can withdraw from at any time.' },
+      visitWebsite: 'Visit website →',
       copyTrading: { desc: 'A demo application for copy trading — automatically replicating trades across accounts.' },
       aiAssistant: { desc: 'An AI assistant for automated responses and tasks, built with JavaScript.' },
       btcNotar: { desc: 'A web application for notarizing data via Bitcoin.' },
@@ -102,6 +105,9 @@ const translations = {
     },
     projects: {
       heading: 'Проекти',
+      latest: 'Последен проект',
+      tofiQuant: { desc: 'Куантов трейдинг — систематична стратегия, базирана на правила, върху перпетюъл фючърси в ApeX Omni, работеща като некъстодиален on-chain трезор, от който можеш да теглиш по всяко време.' },
+      visitWebsite: 'Към сайта →',
       copyTrading: { desc: 'Демонстрационно приложение за copy trading — автоматично реплициране на сделки между акаунти.' },
       aiAssistant: { desc: 'AI асистент за автоматизирани отговори и задачи, изграден с JavaScript.' },
       btcNotar: { desc: 'Уеб приложение, свързано с нотариране на данни през Bitcoin.' },

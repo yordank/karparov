@@ -391,6 +391,29 @@ section { padding-block: 96px; }
   font-size: 0.92rem;
   margin-top: 4px;
 }
+.project-featured {
+  grid-column: 1 / -1;
+  border-color: var(--accent);
+}
+.project-featured .project-num {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.project-badge {
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: 999px;
+  background: var(--accent);
+  color: #fff;
+}
+.project-links {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
 
 /* ---------- Contact ---------- */
 .contact-content {
