@@ -18,8 +18,7 @@ const translations = {
     },
     about: {
       heading: 'About',
-      photoCaption: 'Plovdiv, Bulgaria — home turf.',
-      photoCreditLabel: 'Photo:',
+      photoCaption: 'On a bench with Einstein, and behind the chessboard.',
       text: "I'm Jordan — a software developer based in Bulgaria who believes technology, personal responsibility, and clear principles go hand in hand. I'm a strong advocate for Bitcoin and sound money, I care deeply about animal rights, and I stay politically independent — judging issues on their merits, not on party lines. Outside of code, you'll usually find me training for the next marathon.",
       facts: {
         basedIn: { label: 'Based in', value: 'Plovdiv, Bulgaria' },
@@ -78,8 +77,7 @@ const translations = {
     },
     about: {
       heading: 'За мен',
-      photoCaption: 'Пловдив, България — родният ми град.',
-      photoCreditLabel: 'Снимка:',
+      photoCaption: 'На пейка с Айнщайн и зад шахматната дъска.',
       text: 'Аз съм Йордан — софтуерен разработчик от България, който вярва, че технологиите, личната отговорност и ясните принципи вървят ръка за ръка. Твърдо подкрепям Bitcoin и стабилните пари, дълбоко ме вълнуват правата на животните, и оставам политически независим — преценявам всеки въпрос по същество, а не по партийна линия. Извън кода обикновено ме намираш да тренирам за следващия маратон.',
       facts: {
         basedIn: { label: 'Базиран в', value: 'Пловдив, България' },

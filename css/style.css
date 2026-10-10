@@ -241,9 +241,15 @@ section { padding-block: 96px; }
 .about-photo {
   margin: 0 0 40px;
 }
+.about-photo-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
 .about-photo img {
   width: 100%;
-  aspect-ratio: 21 / 9;
+  height: auto;
+  aspect-ratio: 4 / 5;
   object-fit: cover;
   border-radius: var(--radius);
   box-shadow: var(--shadow);
@@ -257,12 +263,7 @@ section { padding-block: 96px; }
   gap: 12px;
   flex-wrap: wrap;
 }
-.photo-credit a {
-  color: var(--text-muted);
-  text-decoration: underline;
-  text-underline-offset: 2px;
-}
-.photo-credit a:hover { color: var(--accent); }
+.about-photo .photo-einstein { object-position: center 70%; }
 
 .about-grid {
   display: grid;
