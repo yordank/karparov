@@ -11,20 +11,21 @@ const translations = {
     hero: {
       eyebrow: "Hi, I'm",
       name: 'Jordan Karparov',
-      role: 'Developer, Bitcoin advocate &amp; marathon runner',
-      text: "I build software, run long distances, and speak up for decentralized money and animal rights. Politically independent, consistent in principles.",
+      role: 'Developer, Bitcoin advocate, marathon runner &amp; chess player',
+      text: "I build software, run long distances, play chess, and speak up for decentralized money and animal rights. Politically independent, consistent in principles.",
       viewProjects: 'View projects',
       getInTouch: 'Get in touch',
     },
     about: {
       heading: 'About',
       photoCaption: 'On a bench with Einstein, and behind the chessboard.',
-      text: "I'm Jordan — a software developer based in Bulgaria who believes technology, personal responsibility, and clear principles go hand in hand. I'm a strong advocate for Bitcoin and sound money, I care deeply about animal rights, and I stay politically independent — judging issues on their merits, not on party lines. Outside of code, you'll usually find me training for the next marathon.",
+      text: "I'm Jordan — a software developer based in Bulgaria who believes technology, personal responsibility, and clear principles go hand in hand. I'm a strong advocate for Bitcoin and sound money, I care deeply about animal rights, and I stay politically independent — judging issues on their merits, not on party lines. Outside of code, you'll usually find me training for the next marathon or sitting behind a chessboard.",
       facts: {
         basedIn: { label: 'Based in', value: 'Plovdiv, Bulgaria' },
         politics: { label: 'Politics', value: 'Independent' },
         advocates: { label: 'Advocates for', value: 'Bitcoin &amp; animal rights' },
         runs: { label: 'Runs', value: 'Marathons' },
+        chess: { label: 'Plays', value: 'Chess' },
       },
     },
     values: {
@@ -73,20 +74,21 @@ const translations = {
     hero: {
       eyebrow: 'Здравей, аз съм',
       name: 'Йордан Карпаров',
-      role: 'Разработчик, застъпник за Bitcoin и маратонец',
-      text: 'Изграждам софтуер, тичам дълги разстояния и подкрепям децентрализираните пари и правата на животните. Политически независим, последователен в принципите си.',
+      role: 'Разработчик, застъпник за Bitcoin, маратонец и шахматист',
+      text: 'Изграждам софтуер, тичам дълги разстояния, играя шахмат и подкрепям децентрализираните пари и правата на животните. Политически независим, последователен в принципите си.',
       viewProjects: 'Виж проектите',
       getInTouch: 'Свържи се с мен',
     },
     about: {
       heading: 'За мен',
       photoCaption: 'На пейка с Айнщайн и зад шахматната дъска.',
-      text: 'Аз съм Йордан — софтуерен разработчик от България, който вярва, че технологиите, личната отговорност и ясните принципи вървят ръка за ръка. Твърдо подкрепям Bitcoin и стабилните пари, дълбоко ме вълнуват правата на животните, и оставам политически независим — преценявам всеки въпрос по същество, а не по партийна линия. Извън кода обикновено ме намираш да тренирам за следващия маратон.',
+      text: 'Аз съм Йордан — софтуерен разработчик от България, който вярва, че технологиите, личната отговорност и ясните принципи вървят ръка за ръка. Твърдо подкрепям Bitcoin и стабилните пари, дълбоко ме вълнуват правата на животните, и оставам политически независим — преценявам всеки въпрос по същество, а не по партийна линия. Извън кода обикновено ме намираш да тренирам за следващия маратон или зад шахматната дъска.',
       facts: {
         basedIn: { label: 'Базиран в', value: 'Пловдив, България' },
         politics: { label: 'Политика', value: 'Независим' },
         advocates: { label: 'Застъпник за', value: 'Bitcoin и права на животните' },
         runs: { label: 'Тича', value: 'Маратони' },
+        chess: { label: 'Играе', value: 'Шахмат' },
       },
     },
     values: {
