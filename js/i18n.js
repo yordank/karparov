@@ -6,6 +6,7 @@ const translations = {
       values: 'Values',
       skills: 'Skills',
       projects: 'Projects',
+      blog: 'Blog',
       contact: 'Contact',
     },
     hero: {
@@ -52,6 +53,11 @@ const translations = {
       btcNotar: { desc: 'An open-source Node.js library for notarizing documents on Bitcoin. It batches hashes into a Merkle tree, anchors the root via OP_RETURN, and returns proofs anyone can verify on-chain.' },
       viewOnGithub: 'View on GitHub →',
     },
+    blog: {
+      heading: 'Blog',
+      lead: 'Thoughts on Bitcoin, trading, code, running and chess — by date.',
+      all: 'All posts →',
+    },
     contact: {
       heading: 'Contact',
       lead: "Have a project or idea? Reach out — I'd love to talk about it.",
@@ -69,6 +75,7 @@ const translations = {
       values: 'Ценности',
       skills: 'Умения',
       projects: 'Проекти',
+      blog: 'Блог',
       contact: 'Контакти',
     },
     hero: {
@@ -115,6 +122,11 @@ const translations = {
       btcNotar: { desc: 'Open-source Node.js библиотека за нотариране на документи в Bitcoin. Събира хешовете в Merkle дърво, записва корена чрез OP_RETURN и връща доказателства, които всеки може да провери в блокчейна.' },
       viewOnGithub: 'Виж в GitHub →',
     },
+    blog: {
+      heading: 'Блог',
+      lead: 'Мисли за Bitcoin, трейдинг, код, бягане и шахмат — подредени по дата.',
+      all: 'Всички статии →',
+    },
     contact: {
       heading: 'Контакти',
       lead: 'Имаш проект или идея? Пиши ми — с удоволствие ще го обсъдим.',
@@ -144,8 +156,9 @@ const translations = {
     root.lang = lang;
     langToggle.textContent = lang === 'en' ? 'BG' : 'EN';
     langToggle.setAttribute('aria-label', lang === 'en' ? 'Switch to Bulgarian' : 'Превключи на английски');
-    document.title = lang === 'bg' ? translations.bg.hero.name : translations.en.hero.name;
+    if (!document.body.dataset.page) document.title = lang === 'bg' ? translations.bg.hero.name : translations.en.hero.name;
     try { localStorage.setItem('lang', lang); } catch (e) {}
+    document.dispatchEvent(new CustomEvent('langchange', { detail: lang }));
   }
 
   let saved = 'en';

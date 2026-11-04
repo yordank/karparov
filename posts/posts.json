@@ -1,0 +1,12 @@
+[
+  {
+    "slug": "hello",
+    "date": "2026-11-04",
+    "title": { "bg": "Здравейте — защо пиша този блог", "en": "Hello — why I'm starting this blog" },
+    "summary": {
+      "bg": "Първа публикация: за какво ще пиша тук — Bitcoin, трейдинг, код, бягане и шахмат.",
+      "en": "First post: what I'll write about here — Bitcoin, trading, code, running and chess."
+    },
+    "lang": "bg"
+  }
+]

@@ -32,6 +32,7 @@
         <li><a href="#values" data-i18n="nav.values">Values</a></li>
         <li><a href="#skills" data-i18n="nav.skills">Skills</a></li>
         <li><a href="#projects" data-i18n="nav.projects">Projects</a></li>
+        <li><a href="blog.html" data-i18n="nav.blog">Blog</a></li>
         <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
       </ul>
       <div class="nav-controls">
@@ -197,9 +198,19 @@
       </div>
     </section>
 
-    <section id="contact" class="contact container">
+    <section id="blog" class="blog container">
       <div class="section-head">
         <span class="section-num">05</span>
+        <h2 data-i18n="blog.heading">Blog</h2>
+      </div>
+      <p class="blog-lead" data-i18n="blog.lead">Thoughts on Bitcoin, trading, code, running and chess — by date.</p>
+      <div class="post-list" data-blog-list data-limit="3"></div>
+      <a href="blog.html" class="project-link blog-all" data-i18n="blog.all">All posts →</a>
+    </section>
+
+    <section id="contact" class="contact container">
+      <div class="section-head">
+        <span class="section-num">06</span>
         <h2 data-i18n="contact.heading">Contact</h2>
       </div>
       <div class="contact-content">
@@ -221,5 +232,6 @@
 
   <script src="js/i18n.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/blog.js"></script>
 </body>
 </html>
