@@ -1,15 +1,19 @@
 import { createContext, useCallback, useContext, useEffect, useState } from 'react';
-import { translations } from './translations.js';
+import { translations, LANGUAGES } from './translations.js';
 
 // ---------- Language ----------
 const LangContext = createContext(null);
 
+const CODES = LANGUAGES.map((l) => l.code);
+
 function readLang() {
   try {
-    return localStorage.getItem('lang') === 'bg' ? 'bg' : 'en';
-  } catch (e) {
-    return 'en';
-  }
+    const saved = localStorage.getItem('lang');
+    if (CODES.includes(saved)) return saved;
+  } catch (e) {}
+  // First visit: use the browser language if we have it.
+  const nav = (navigator.language || 'en').slice(0, 2);
+  return CODES.includes(nav) ? nav : 'en';
 }
 
 export function LangProvider({ children }) {
@@ -20,7 +24,6 @@ export function LangProvider({ children }) {
     try { localStorage.setItem('lang', lang); } catch (e) {}
   }, [lang]);
 
-  const toggleLang = useCallback(() => setLang((l) => (l === 'en' ? 'bg' : 'en')), []);
 
   // t('about.facts.basedIn.label') -> string (falls back to English)
   const t = useCallback(
@@ -32,7 +35,7 @@ export function LangProvider({ children }) {
     [lang]
   );
 
-  return <LangContext.Provider value={{ lang, t, toggleLang }}>{children}</LangContext.Provider>;
+  return <LangContext.Provider value={{ lang, setLang, t }}>{children}</LangContext.Provider>;
 }
 
 export const useLang = () => useContext(LangContext);

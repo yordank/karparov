@@ -3,11 +3,23 @@ import PostList from '../components/PostList.jsx';
 
 const ext = { target: '_blank', rel: 'noopener' };
 
-function SectionHead({ num, children }) {
+function SectionHead({ children }) {
   return (
     <div className="section-head">
-      <span className="section-num">{num}</span>
       <h2>{children}</h2>
+    </div>
+  );
+}
+
+// Decorative chessboard beside the hero: 8x8 squares, a few lit in the accent colour.
+const LIT = new Set([5, 14, 19, 28, 34, 41, 50, 59]);
+function HeroBoard() {
+  return (
+    <div className="hero-board" aria-hidden="true">
+      {Array.from({ length: 64 }, (_, i) => {
+        const dark = (Math.floor(i / 8) + i) % 2 === 1;
+        return <span key={i} className={`${dark ? 'sq-dark' : 'sq-light'}${LIT.has(i) ? ' sq-lit' : ''}`} />;
+      })}
     </div>
   );
 }
@@ -53,7 +65,7 @@ const PROJECTS = [
     tags: ['Node.js', 'Bitcoin', 'Open source', 'MIT'],
     links: [
       { href: 'https://github.com/yordank/BTCNotar', label: 'projects.viewOnGithub' },
-      { href: 'https://www.npmjs.com/package/btcnotar', text: 'npm install btcnotar →' },
+      { href: 'https://www.npmjs.com/package/btcnotar', text: 'npm' },
     ],
   },
 ];
@@ -70,18 +82,21 @@ export default function Home() {
   return (
     <>
       <section className="hero container">
-        <p className="eyebrow reveal">{t('hero.eyebrow')}</p>
-        <h1 className="reveal">{t('hero.name')}</h1>
-        <p className="hero-role reveal">{t('hero.role')}</p>
-        <p className="hero-text reveal">{t('hero.text')}</p>
-        <div className="hero-actions reveal">
-          <a href="#projects" className="btn btn-primary">{t('hero.viewProjects')}</a>
-          <a href="#contact" className="btn btn-ghost">{t('hero.getInTouch')}</a>
+        <div className="hero-copy">
+          <p className="eyebrow">{t('hero.eyebrow')}</p>
+          <h1>{t('hero.name')}</h1>
+          <p className="hero-role">{t('hero.role')}</p>
+          <p className="hero-text">{t('hero.text')}</p>
+          <div className="hero-actions">
+            <a href="#projects" className="btn btn-primary">{t('hero.viewProjects')}</a>
+            <a href="#contact" className="btn btn-ghost">{t('hero.getInTouch')}</a>
+          </div>
         </div>
+        <HeroBoard />
       </section>
 
       <section id="about" className="about container">
-        <SectionHead num="01">{t('about.heading')}</SectionHead>
+        <SectionHead>{t('about.heading')}</SectionHead>
         <figure className="about-photo">
           <div className="about-photo-grid">
             <img src="assets/jordan-einstein.jpg" alt="Jordan sitting on a bench next to a bronze statue of Albert Einstein" loading="lazy" width="720" height="960" className="photo-einstein" />
@@ -105,7 +120,7 @@ export default function Home() {
       </section>
 
       <section id="values" className="values container">
-        <SectionHead num="02">{t('values.heading')}</SectionHead>
+        <SectionHead>{t('values.heading')}</SectionHead>
         <div className="values-grid">
           {Object.keys(VALUE_ICONS).map((k) => (
             <div className="value-card" key={k}>
@@ -118,7 +133,7 @@ export default function Home() {
       </section>
 
       <section id="skills" className="skills container">
-        <SectionHead num="03">{t('skills.heading')}</SectionHead>
+        <SectionHead>{t('skills.heading')}</SectionHead>
         <div className="skills-grid">
           {SKILLS.map((k) => (
             <div className="skill-card" key={k}>
@@ -130,21 +145,20 @@ export default function Home() {
       </section>
 
       <section id="projects" className="projects container">
-        <SectionHead num="04">{t('projects.heading')}</SectionHead>
+        <SectionHead>{t('projects.heading')}</SectionHead>
         <div className="projects-grid">
           <article className="project-card project-featured">
-            <div className="project-num"><span>01</span> <span className="project-badge">{t('projects.latest')}</span></div>
+            <span className="project-badge">{t('projects.latest')}</span>
             <h3>Tofi Quant</h3>
             <p>{t('projects.tofiQuant.desc')}</p>
             <div className="project-tags"><span>Quant trading</span><span>Perpetuals</span><span>On-chain</span></div>
             <div className="project-links">
               <a href="https://yordank.github.io/Tofi-Quant-site/" className="project-link" {...ext}>{t('projects.visitWebsite')}</a>
-              <a href="https://instagram.com/tofi.quant" className="project-link" {...ext}>Instagram @tofi.quant →</a>
+              <a href="https://instagram.com/tofi.quant" className="project-link" {...ext}>Instagram</a>
             </div>
           </article>
-          {PROJECTS.map((p, i) => (
+          {PROJECTS.map((p) => (
             <article className="project-card" key={p.key}>
-              <div className="project-num">{String(i + 2).padStart(2, '0')}</div>
               <h3>{p.name}</h3>
               <p>{t(`projects.${p.key}.desc`)}</p>
               <div className="project-tags">{p.tags.map((tag) => <span key={tag}>{tag}</span>)}</div>
@@ -159,14 +173,14 @@ export default function Home() {
       </section>
 
       <section id="blog" className="blog container">
-        <SectionHead num="05">{t('blog.heading')}</SectionHead>
+        <SectionHead>{t('blog.heading')}</SectionHead>
         <p className="blog-lead">{t('blog.lead')}</p>
         <PostList limit={3} />
         <a href="#/blog" className="project-link blog-all">{t('blog.all')}</a>
       </section>
 
       <section id="contact" className="contact container">
-        <SectionHead num="06">{t('contact.heading')}</SectionHead>
+        <SectionHead>{t('contact.heading')}</SectionHead>
         <div className="contact-content">
           <p className="contact-lead">{t('contact.lead')}</p>
           <div className="social-links">

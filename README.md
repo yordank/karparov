@@ -34,7 +34,7 @@ railway.json             — настройки за Railway
 
 ## Промени по съдържанието
 
-- Текстове: `src/translations.js` (двата езика един до друг).
+- Текстове: `src/translations.js` — английски, български, руски и украински. Нов език се добавя в `LANGUAGES` и с нов блок преводи.
 - Проекти: масивът `PROJECTS` в `src/pages/Home.jsx`.
 - Цветове: CSS променливите в `:root` в `src/style.css`.
 

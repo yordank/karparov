@@ -1,269 +1,255 @@
-// All site text in English and Bulgarian.
+// All site text. Languages: English, Bulgarian, Russian, Ukrainian.
+// To change text, edit it here — every language sits under its own code.
+
+export const LANGUAGES = [
+  { code: 'en', short: 'EN', name: 'English', locale: 'en-GB' },
+  { code: 'bg', short: 'BG', name: 'Български', locale: 'bg-BG' },
+  { code: 'ru', short: 'RU', name: 'Русский', locale: 'ru-RU' },
+  { code: 'uk', short: 'UA', name: 'Українська', locale: 'uk-UA' },
+];
+
 export const translations = {
-  "en": {
-    "nav": {
-      "about": "About",
-      "values": "Values",
-      "skills": "Skills",
-      "projects": "Projects",
-      "blog": "Blog",
-      "contact": "Contact",
-      "initials": [
-        "J",
-        "K"
-      ]
+  en: {
+    nav: { about: 'About', values: 'Values', skills: 'Skills', projects: 'Projects', blog: 'Blog', contact: 'Contact', initials: ['J', 'K'] },
+    hero: {
+      eyebrow: "Hi, I'm",
+      name: 'Jordan Karparov',
+      role: 'Developer, Bitcoin advocate, marathon runner & chess player',
+      text: 'I build software, run long distances, play chess, and speak up for decentralized money and animal rights. Politically independent, consistent in principles.',
+      viewProjects: 'View projects',
+      getInTouch: 'Get in touch',
     },
-    "hero": {
-      "eyebrow": "Hi, I'm",
-      "name": "Jordan Karparov",
-      "role": "Developer, Bitcoin advocate, marathon runner & chess player",
-      "text": "I build software, run long distances, play chess, and speak up for decentralized money and animal rights. Politically independent, consistent in principles.",
-      "viewProjects": "View projects",
-      "getInTouch": "Get in touch"
+    about: {
+      heading: 'About',
+      photoCaption: 'On a bench with Einstein, and behind the chessboard.',
+      text: "I'm Jordan — a software developer based in Bulgaria who believes technology, personal responsibility, and clear principles go hand in hand. I'm a strong advocate for Bitcoin and sound money, I care deeply about animal rights, and I stay politically independent — judging issues on their merits, not on party lines. Outside of code, you'll usually find me training for the next marathon or sitting behind a chessboard.",
+      facts: {
+        basedIn: { label: 'Based in', value: 'Plovdiv, Bulgaria' },
+        politics: { label: 'Politics', value: 'Independent' },
+        advocates: { label: 'Advocates for', value: 'Bitcoin & animal rights' },
+        runs: { label: 'Runs', value: 'Marathons' },
+        chess: { label: 'Plays', value: 'Chess', fide: 'FIDE Rapid 1736' },
+      },
     },
-    "about": {
-      "heading": "About",
-      "photoCaption": "On a bench with Einstein, and behind the chessboard.",
-      "text": "I'm Jordan — a software developer based in Bulgaria who believes technology, personal responsibility, and clear principles go hand in hand. I'm a strong advocate for Bitcoin and sound money, I care deeply about animal rights, and I stay politically independent — judging issues on their merits, not on party lines. Outside of code, you'll usually find me training for the next marathon or sitting behind a chessboard.",
-      "facts": {
-        "basedIn": {
-          "label": "Based in",
-          "value": "Plovdiv, Bulgaria"
-        },
-        "politics": {
-          "label": "Politics",
-          "value": "Independent"
-        },
-        "advocates": {
-          "label": "Advocates for",
-          "value": "Bitcoin & animal rights"
-        },
-        "runs": {
-          "label": "Runs",
-          "value": "Marathons"
-        },
-        "chess": {
-          "label": "Plays",
-          "value": "Chess",
-          "fide": "FIDE Rapid 1736"
-        }
-      }
+    values: {
+      heading: 'What I stand for',
+      bitcoin: { title: 'Bitcoin', desc: 'Sound, decentralized money — free from political control and central banks.' },
+      animalRights: { title: 'Animal rights', desc: 'The ethical treatment of animals and stronger legal protections for them.' },
+      independent: { title: 'Politically independent', desc: 'No party affiliation. Every issue judged on its own merits, not on tribal lines.' },
+      marathon: { title: 'Marathon runner', desc: 'Training and racing long distance — discipline earned one kilometre at a time.' },
     },
-    "values": {
-      "heading": "What I Stand For",
-      "bitcoin": {
-        "title": "Bitcoin",
-        "desc": "Sound, decentralized money — free from political control and central banks."
-      },
-      "animalRights": {
-        "title": "Animal Rights",
-        "desc": "The ethical treatment of animals and stronger legal protections for them."
-      },
-      "independent": {
-        "title": "Politically Independent",
-        "desc": "No party affiliation. Every issue judged on its own merits, not on tribal lines."
-      },
-      "marathon": {
-        "title": "Marathon Runner",
-        "desc": "Training and racing long distance — discipline earned one mile at a time."
-      }
+    skills: {
+      heading: 'Skills',
+      frontend: { title: 'Frontend', desc: 'HTML, CSS, JavaScript, React' },
+      backend: { title: 'Backend', desc: 'Node.js, API design, databases' },
+      tools: { title: 'Tools', desc: 'Git, Docker, CI/CD' },
+      design: { title: 'Design', desc: 'UI/UX fundamentals, responsive design' },
     },
-    "skills": {
-      "heading": "Skills",
-      "frontend": {
-        "title": "Frontend",
-        "desc": "HTML, CSS, JavaScript, React"
-      },
-      "backend": {
-        "title": "Backend",
-        "desc": "Node.js, API design, databases"
-      },
-      "tools": {
-        "title": "Tools",
-        "desc": "Git, Docker, CI/CD"
-      },
-      "design": {
-        "title": "Design",
-        "desc": "UI/UX fundamentals, responsive design"
-      }
+    projects: {
+      heading: 'Projects',
+      latest: 'Latest project',
+      tofiQuant: { desc: 'Quant trading — a systematic, rules-based strategy on ApeX Omni perpetual futures, run as a non-custodial on-chain vault you can withdraw from at any time.' },
+      visitWebsite: 'Visit website',
+      copyTrading: { desc: 'A demo application for copy trading — automatically replicating trades across accounts.' },
+      aiAssistant: { desc: 'An AI assistant for automated responses and tasks, built with JavaScript.' },
+      btcNotar: { desc: 'An open-source Node.js library for notarizing documents on Bitcoin. It batches hashes into a Merkle tree, anchors the root via OP_RETURN, and returns proofs anyone can verify on-chain.' },
+      viewOnGithub: 'GitHub',
     },
-    "projects": {
-      "heading": "Projects",
-      "latest": "Latest project",
-      "tofiQuant": {
-        "desc": "Quant trading — a systematic, rules-based strategy on ApeX Omni perpetual futures, run as a non-custodial on-chain vault you can withdraw from at any time."
-      },
-      "visitWebsite": "Visit website →",
-      "copyTrading": {
-        "desc": "A demo application for copy trading — automatically replicating trades across accounts."
-      },
-      "aiAssistant": {
-        "desc": "An AI assistant for automated responses and tasks, built with JavaScript."
-      },
-      "btcNotar": {
-        "desc": "An open-source Node.js library for notarizing documents on Bitcoin. It batches hashes into a Merkle tree, anchors the root via OP_RETURN, and returns proofs anyone can verify on-chain."
-      },
-      "viewOnGithub": "View on GitHub →"
+    blog: {
+      heading: 'Blog',
+      lead: 'Thoughts on Bitcoin, trading, code, running and chess — newest first.',
+      all: 'All posts',
+      readMore: 'Read',
+      back: 'All posts',
+      notFound: 'This post does not exist. Go back to the list of posts.',
+      empty: 'No posts yet.',
+      written: { bg: 'This post is written in Bulgarian.', en: 'This post is written in English.', ru: 'This post is written in Russian.', uk: 'This post is written in Ukrainian.' },
     },
-    "blog": {
-      "heading": "Blog",
-      "lead": "Thoughts on Bitcoin, trading, code, running and chess — by date.",
-      "all": "All posts →",
-      "readMore": "Read →",
-      "back": "← All posts",
-      "notFound": "Post not found.",
-      "empty": "No posts yet.",
-      "written": {
-        "bg": "This post is written in Bulgarian.",
-        "en": "This post is written in English."
-      }
-    },
-    "contact": {
-      "heading": "Contact",
-      "lead": "Have a project or idea? Reach out — I'd love to talk about it."
-    },
-    "footer": {
-      "name": "Jordan Karparov",
-      "rights": "All rights reserved.",
-      "backToTop": "Back to top ↑"
-    },
-    "ui": {
-      "switchLang": "Switch to Bulgarian",
-      "toggleTheme": "Toggle theme",
-      "openMenu": "Open menu"
-    }
+    contact: { heading: 'Contact', lead: "Have a project or idea? Write to me — I'd be glad to talk about it." },
+    footer: { name: 'Jordan Karparov', rights: 'All rights reserved.', backToTop: 'Back to top' },
+    ui: { language: 'Language', toggleTheme: 'Toggle theme', openMenu: 'Open menu' },
   },
-  "bg": {
-    "nav": {
-      "about": "За мен",
-      "values": "Ценности",
-      "skills": "Умения",
-      "projects": "Проекти",
-      "blog": "Блог",
-      "contact": "Контакти",
-      "initials": [
-        "Й",
-        "К"
-      ]
+
+  bg: {
+    nav: { about: 'За мен', values: 'Ценности', skills: 'Умения', projects: 'Проекти', blog: 'Блог', contact: 'Контакти', initials: ['Й', 'К'] },
+    hero: {
+      eyebrow: 'Здравей, аз съм',
+      name: 'Йордан Карпаров',
+      role: 'Разработчик, застъпник за Bitcoin, маратонец и шахматист',
+      text: 'Изграждам софтуер, тичам дълги разстояния, играя шахмат и подкрепям децентрализираните пари и правата на животните. Политически независим, последователен в принципите си.',
+      viewProjects: 'Виж проектите',
+      getInTouch: 'Свържи се с мен',
     },
-    "hero": {
-      "eyebrow": "Здравей, аз съм",
-      "name": "Йордан Карпаров",
-      "role": "Разработчик, застъпник за Bitcoin, маратонец и шахматист",
-      "text": "Изграждам софтуер, тичам дълги разстояния, играя шахмат и подкрепям децентрализираните пари и правата на животните. Политически независим, последователен в принципите си.",
-      "viewProjects": "Виж проектите",
-      "getInTouch": "Свържи се с мен"
+    about: {
+      heading: 'За мен',
+      photoCaption: 'На пейка с Айнщайн и зад шахматната дъска.',
+      text: 'Аз съм Йордан — софтуерен разработчик от България, който вярва, че технологиите, личната отговорност и ясните принципи вървят ръка за ръка. Твърдо подкрепям Bitcoin и стабилните пари, дълбоко ме вълнуват правата на животните, и оставам политически независим — преценявам всеки въпрос по същество, а не по партийна линия. Извън кода обикновено ме намираш да тренирам за следващия маратон или зад шахматната дъска.',
+      facts: {
+        basedIn: { label: 'Базиран в', value: 'Пловдив, България' },
+        politics: { label: 'Политика', value: 'Независим' },
+        advocates: { label: 'Застъпник за', value: 'Bitcoin и права на животните' },
+        runs: { label: 'Тича', value: 'Маратони' },
+        chess: { label: 'Играе', value: 'Шахмат', fide: 'ФИДЕ рапид 1736' },
+      },
     },
-    "about": {
-      "heading": "За мен",
-      "photoCaption": "На пейка с Айнщайн и зад шахматната дъска.",
-      "text": "Аз съм Йордан — софтуерен разработчик от България, който вярва, че технологиите, личната отговорност и ясните принципи вървят ръка за ръка. Твърдо подкрепям Bitcoin и стабилните пари, дълбоко ме вълнуват правата на животните, и оставам политически независим — преценявам всеки въпрос по същество, а не по партийна линия. Извън кода обикновено ме намираш да тренирам за следващия маратон или зад шахматната дъска.",
-      "facts": {
-        "basedIn": {
-          "label": "Базиран в",
-          "value": "Пловдив, България"
-        },
-        "politics": {
-          "label": "Политика",
-          "value": "Независим"
-        },
-        "advocates": {
-          "label": "Застъпник за",
-          "value": "Bitcoin и права на животните"
-        },
-        "runs": {
-          "label": "Тича",
-          "value": "Маратони"
-        },
-        "chess": {
-          "label": "Играе",
-          "value": "Шахмат",
-          "fide": "ФИДЕ рапид 1736"
-        }
-      }
+    values: {
+      heading: 'Зад какво стоя',
+      bitcoin: { title: 'Bitcoin', desc: 'Стабилни, децентрализирани пари — свободни от политически контрол и централни банки.' },
+      animalRights: { title: 'Права на животните', desc: 'Етично отношение към животните и по-силна законова защита за тях.' },
+      independent: { title: 'Политически независим', desc: 'Без партийна принадлежност. Всеки въпрос се преценява по същество, не по партийни линии.' },
+      marathon: { title: 'Маратонец', desc: 'Тренировки и състезания на дълги разстояния — дисциплина, спечелена километър по километър.' },
     },
-    "values": {
-      "heading": "Зад какво стоя",
-      "bitcoin": {
-        "title": "Bitcoin",
-        "desc": "Стабилни, децентрализирани пари — свободни от политически контрол и централни банки."
-      },
-      "animalRights": {
-        "title": "Права на животните",
-        "desc": "Етично отношение към животните и по-силна законова защита за тях."
-      },
-      "independent": {
-        "title": "Политически независим",
-        "desc": "Без партийна принадлежност. Всеки въпрос се преценява по същество, не по коалиционни линии."
-      },
-      "marathon": {
-        "title": "Маратонец",
-        "desc": "Тренировки и състезания на дълги разстояния — дисциплина, спечелена миля по миля."
-      }
+    skills: {
+      heading: 'Умения',
+      frontend: { title: 'Frontend', desc: 'HTML, CSS, JavaScript, React' },
+      backend: { title: 'Backend', desc: 'Node.js, API дизайн, бази данни' },
+      tools: { title: 'Инструменти', desc: 'Git, Docker, CI/CD' },
+      design: { title: 'Дизайн', desc: 'UI/UX основи, responsive дизайн' },
     },
-    "skills": {
-      "heading": "Умения",
-      "frontend": {
-        "title": "Frontend",
-        "desc": "HTML, CSS, JavaScript, React"
-      },
-      "backend": {
-        "title": "Backend",
-        "desc": "Node.js, API дизайн, бази данни"
-      },
-      "tools": {
-        "title": "Инструменти",
-        "desc": "Git, Docker, CI/CD"
-      },
-      "design": {
-        "title": "Дизайн",
-        "desc": "UI/UX основи, responsive дизайн"
-      }
+    projects: {
+      heading: 'Проекти',
+      latest: 'Последен проект',
+      tofiQuant: { desc: 'Куантов трейдинг — систематична стратегия, базирана на правила, върху перпетюъл фючърси в ApeX Omni, работеща като некъстодиален on-chain трезор, от който можеш да теглиш по всяко време.' },
+      visitWebsite: 'Към сайта',
+      copyTrading: { desc: 'Демонстрационно приложение за copy trading — автоматично реплициране на сделки между акаунти.' },
+      aiAssistant: { desc: 'AI асистент за автоматизирани отговори и задачи, изграден с JavaScript.' },
+      btcNotar: { desc: 'Open-source Node.js библиотека за нотариране на документи в Bitcoin. Събира хешовете в Merkle дърво, записва корена чрез OP_RETURN и връща доказателства, които всеки може да провери в блокчейна.' },
+      viewOnGithub: 'GitHub',
     },
-    "projects": {
-      "heading": "Проекти",
-      "latest": "Последен проект",
-      "tofiQuant": {
-        "desc": "Куантов трейдинг — систематична стратегия, базирана на правила, върху перпетюъл фючърси в ApeX Omni, работеща като некъстодиален on-chain трезор, от който можеш да теглиш по всяко време."
-      },
-      "visitWebsite": "Към сайта →",
-      "copyTrading": {
-        "desc": "Демонстрационно приложение за copy trading — автоматично реплициране на сделки между акаунти."
-      },
-      "aiAssistant": {
-        "desc": "AI асистент за автоматизирани отговори и задачи, изграден с JavaScript."
-      },
-      "btcNotar": {
-        "desc": "Open-source Node.js библиотека за нотариране на документи в Bitcoin. Събира хешовете в Merkle дърво, записва корена чрез OP_RETURN и връща доказателства, които всеки може да провери в блокчейна."
-      },
-      "viewOnGithub": "Виж в GitHub →"
+    blog: {
+      heading: 'Блог',
+      lead: 'Мисли за Bitcoin, трейдинг, код, бягане и шахмат — най-новите първи.',
+      all: 'Всички статии',
+      readMore: 'Прочети',
+      back: 'Всички статии',
+      notFound: 'Тази статия не съществува. Върни се към списъка със статии.',
+      empty: 'Все още няма статии.',
+      written: { bg: 'Статията е на български.', en: 'Статията е на английски.', ru: 'Статията е на руски.', uk: 'Статията е на украински.' },
     },
-    "blog": {
-      "heading": "Блог",
-      "lead": "Мисли за Bitcoin, трейдинг, код, бягане и шахмат — подредени по дата.",
-      "all": "Всички статии →",
-      "readMore": "Прочети →",
-      "back": "← Всички статии",
-      "notFound": "Статията не е намерена.",
-      "empty": "Все още няма статии.",
-      "written": {
-        "bg": "Статията е на български.",
-        "en": "Статията е на английски."
-      }
+    contact: { heading: 'Контакти', lead: 'Имаш проект или идея? Пиши ми — с удоволствие ще го обсъдим.' },
+    footer: { name: 'Йордан Карпаров', rights: 'Всички права запазени.', backToTop: 'Нагоре' },
+    ui: { language: 'Език', toggleTheme: 'Смени темата', openMenu: 'Отвори менюто' },
+  },
+
+  ru: {
+    nav: { about: 'Обо мне', values: 'Ценности', skills: 'Навыки', projects: 'Проекты', blog: 'Блог', contact: 'Контакты', initials: ['Й', 'К'] },
+    hero: {
+      eyebrow: 'Привет, я',
+      name: 'Йордан Карпаров',
+      role: 'Разработчик, сторонник Bitcoin, марафонец и шахматист',
+      text: 'Я создаю программы, бегаю на длинные дистанции, играю в шахматы и выступаю за децентрализованные деньги и права животных. Политически независим, последователен в своих принципах.',
+      viewProjects: 'Смотреть проекты',
+      getInTouch: 'Связаться со мной',
     },
-    "contact": {
-      "heading": "Контакти",
-      "lead": "Имаш проект или идея? Пиши ми — с удоволствие ще го обсъдим."
+    about: {
+      heading: 'Обо мне',
+      photoCaption: 'На скамейке с Эйнштейном и за шахматной доской.',
+      text: 'Я Йордан — разработчик программного обеспечения из Болгарии. Я верю, что технологии, личная ответственность и ясные принципы идут рука об руку. Я убеждённый сторонник Bitcoin и надёжных денег, мне очень важны права животных, и я остаюсь политически независимым — сужу о каждом вопросе по существу, а не по партийной линии. Вне работы с кодом я обычно готовлюсь к следующему марафону или сижу за шахматной доской.',
+      facts: {
+        basedIn: { label: 'Живу в', value: 'Пловдив, Болгария' },
+        politics: { label: 'Политика', value: 'Независим' },
+        advocates: { label: 'Поддерживаю', value: 'Bitcoin и права животных' },
+        runs: { label: 'Бегаю', value: 'Марафоны' },
+        chess: { label: 'Играю', value: 'Шахматы', fide: 'ФИДЕ рапид 1736' },
+      },
     },
-    "footer": {
-      "name": "Йордан Карпаров",
-      "rights": "Всички права запазени.",
-      "backToTop": "Нагоре ↑"
+    values: {
+      heading: 'Мои принципы',
+      bitcoin: { title: 'Bitcoin', desc: 'Надёжные, децентрализованные деньги — свободные от политического контроля и центральных банков.' },
+      animalRights: { title: 'Права животных', desc: 'Этичное отношение к животным и более сильная правовая защита для них.' },
+      independent: { title: 'Политически независим', desc: 'Без партийной принадлежности. Каждый вопрос оцениваю по существу, а не по партийным линиям.' },
+      marathon: { title: 'Марафонец', desc: 'Тренировки и забеги на длинные дистанции — дисциплина, заработанная километр за километром.' },
     },
-    "ui": {
-      "switchLang": "Превключи на английски",
-      "toggleTheme": "Смени темата",
-      "openMenu": "Отвори менюто"
-    }
-  }
+    skills: {
+      heading: 'Навыки',
+      frontend: { title: 'Frontend', desc: 'HTML, CSS, JavaScript, React' },
+      backend: { title: 'Backend', desc: 'Node.js, проектирование API, базы данных' },
+      tools: { title: 'Инструменты', desc: 'Git, Docker, CI/CD' },
+      design: { title: 'Дизайн', desc: 'Основы UI/UX, адаптивный дизайн' },
+    },
+    projects: {
+      heading: 'Проекты',
+      latest: 'Последний проект',
+      tofiQuant: { desc: 'Квантовый трейдинг — систематическая стратегия на основе правил для бессрочных фьючерсов на ApeX Omni. Работает как некастодиальное on-chain хранилище, из которого можно вывести средства в любой момент.' },
+      visitWebsite: 'Перейти на сайт',
+      copyTrading: { desc: 'Демо-приложение для копитрейдинга — автоматическое копирование сделок между аккаунтами.' },
+      aiAssistant: { desc: 'AI-ассистент для автоматических ответов и задач, написанный на JavaScript.' },
+      btcNotar: { desc: 'Open-source библиотека на Node.js для нотариального заверения документов в Bitcoin. Собирает хеши в дерево Меркла, записывает корень через OP_RETURN и выдаёт доказательства, которые любой может проверить в блокчейне.' },
+      viewOnGithub: 'GitHub',
+    },
+    blog: {
+      heading: 'Блог',
+      lead: 'Мысли о Bitcoin, трейдинге, коде, беге и шахматах — сначала новые.',
+      all: 'Все статьи',
+      readMore: 'Читать',
+      back: 'Все статьи',
+      notFound: 'Такой статьи нет. Вернитесь к списку статей.',
+      empty: 'Статей пока нет.',
+      written: { bg: 'Статья написана на болгарском.', en: 'Статья написана на английском.', ru: 'Статья написана на русском.', uk: 'Статья написана на украинском.' },
+    },
+    contact: { heading: 'Контакты', lead: 'Есть проект или идея? Напишите мне — с удовольствием обсудим.' },
+    footer: { name: 'Йордан Карпаров', rights: 'Все права защищены.', backToTop: 'Наверх' },
+    ui: { language: 'Язык', toggleTheme: 'Сменить тему', openMenu: 'Открыть меню' },
+  },
+
+  uk: {
+    nav: { about: 'Про мене', values: 'Цінності', skills: 'Навички', projects: 'Проєкти', blog: 'Блог', contact: 'Контакти', initials: ['Й', 'К'] },
+    hero: {
+      eyebrow: 'Привіт, я',
+      name: 'Йордан Карпаров',
+      role: 'Розробник, прихильник Bitcoin, марафонець і шахіст',
+      text: 'Я створюю програми, бігаю на довгі дистанції, граю в шахи та виступаю за децентралізовані гроші й права тварин. Політично незалежний, послідовний у своїх принципах.',
+      viewProjects: 'Переглянути проєкти',
+      getInTouch: "Зв'язатися зі мною",
+    },
+    about: {
+      heading: 'Про мене',
+      photoCaption: 'На лавці з Ейнштейном і за шаховою дошкою.',
+      text: 'Я Йордан — розробник програмного забезпечення з Болгарії. Я вірю, що технології, особиста відповідальність і чіткі принципи йдуть пліч-о-пліч. Я переконаний прихильник Bitcoin і надійних грошей, мені дуже важливі права тварин, і я залишаюся політично незалежним — оцінюю кожне питання по суті, а не за партійною лінією. Поза кодом я зазвичай готуюся до наступного марафону або сиджу за шаховою дошкою.',
+      facts: {
+        basedIn: { label: 'Живу в', value: 'Пловдив, Болгарія' },
+        politics: { label: 'Політика', value: 'Незалежний' },
+        advocates: { label: 'Підтримую', value: 'Bitcoin і права тварин' },
+        runs: { label: 'Бігаю', value: 'Марафони' },
+        chess: { label: 'Граю', value: 'Шахи', fide: 'ФІДЕ рапід 1736' },
+      },
+    },
+    values: {
+      heading: 'Мої принципи',
+      bitcoin: { title: 'Bitcoin', desc: 'Надійні, децентралізовані гроші — вільні від політичного контролю та центральних банків.' },
+      animalRights: { title: 'Права тварин', desc: 'Етичне ставлення до тварин і сильніший правовий захист для них.' },
+      independent: { title: 'Політично незалежний', desc: 'Без партійної належності. Кожне питання оцінюю по суті, а не за партійними лініями.' },
+      marathon: { title: 'Марафонець', desc: 'Тренування та забіги на довгі дистанції — дисципліна, здобута кілометр за кілометром.' },
+    },
+    skills: {
+      heading: 'Навички',
+      frontend: { title: 'Frontend', desc: 'HTML, CSS, JavaScript, React' },
+      backend: { title: 'Backend', desc: 'Node.js, проєктування API, бази даних' },
+      tools: { title: 'Інструменти', desc: 'Git, Docker, CI/CD' },
+      design: { title: 'Дизайн', desc: 'Основи UI/UX, адаптивний дизайн' },
+    },
+    projects: {
+      heading: 'Проєкти',
+      latest: 'Останній проєкт',
+      tofiQuant: { desc: 'Квантовий трейдинг — систематична стратегія на основі правил для безстрокових ф\'ючерсів на ApeX Omni. Працює як некастодіальне on-chain сховище, з якого можна вивести кошти будь-коли.' },
+      visitWebsite: 'Перейти на сайт',
+      copyTrading: { desc: 'Демо-застосунок для копітрейдингу — автоматичне копіювання угод між акаунтами.' },
+      aiAssistant: { desc: 'AI-асистент для автоматичних відповідей і завдань, написаний на JavaScript.' },
+      btcNotar: { desc: 'Open-source бібліотека на Node.js для нотаріального засвідчення документів у Bitcoin. Збирає хеші в дерево Меркла, записує корінь через OP_RETURN і видає докази, які будь-хто може перевірити в блокчейні.' },
+      viewOnGithub: 'GitHub',
+    },
+    blog: {
+      heading: 'Блог',
+      lead: 'Думки про Bitcoin, трейдинг, код, біг і шахи — спочатку нові.',
+      all: 'Усі статті',
+      readMore: 'Читати',
+      back: 'Усі статті',
+      notFound: 'Такої статті немає. Поверніться до списку статей.',
+      empty: 'Статей поки немає.',
+      written: { bg: 'Статтю написано болгарською.', en: 'Статтю написано англійською.', ru: 'Статтю написано російською.', uk: 'Статтю написано українською.' },
+    },
+    contact: { heading: 'Контакти', lead: 'Маєте проєкт чи ідею? Напишіть мені — із задоволенням обговоримо.' },
+    footer: { name: 'Йордан Карпаров', rights: 'Усі права захищено.', backToTop: 'Нагору' },
+    ui: { language: 'Мова', toggleTheme: 'Змінити тему', openMenu: 'Відкрити меню' },
+  },
 };
