@@ -1,6 +1,6 @@
 # Лична визитка / портфолио
 
-Сайт на **React** (с **Vite**). Публикува се автоматично в GitHub Pages чрез GitHub Actions.
+Сайт на **React** (с **Vite**). Публикува се автоматично в **Railway** при всяко качване в GitHub.
 
 ## Стартиране локално
 
@@ -29,7 +29,7 @@ src/posts.js             — зарежда статиите от posts/
 src/style.css            — стилове, светла/тъмна тема
 posts/                   — статиите: posts.json (списък) + <slug>.md (текст)
 public/                  — снимки, robots.txt, sitemap.xml
-.github/workflows/       — автоматично публикуване
+railway.json             — настройки за Railway
 ```
 
 ## Промени по съдържанието
@@ -65,5 +65,5 @@ public/                  — снимки, robots.txt, sitemap.xml
 
 ## Публикуване
 
-Всяко качване в основния клон пуска `.github/workflows/deploy.yml`. Той прави build и публикува в GitHub Pages.
-Еднократна настройка: **Settings → Pages → Source: GitHub Actions**.
+Railway следи основния клон в GitHub. При всяко качване Railpack разпознава Vite, пуска `npm run build` и публикува папка `dist/`.
+Важно: в `package.json` не трябва да има скрипт `start` — иначе Railway няма да сервира сайта като статичен.
