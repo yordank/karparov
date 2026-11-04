@@ -290,6 +290,8 @@ section { padding-block: 96px; }
 }
 .about-facts strong { font-size: 0.85rem; color: var(--text-muted); }
 .about-facts span { font-weight: 600; }
+.about-facts span a { color: var(--accent); text-decoration: none; }
+.about-facts span a:hover { text-decoration: underline; }
 
 /* ---------- Values ---------- */
 .values-grid {
