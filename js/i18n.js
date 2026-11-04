@@ -25,7 +25,7 @@ const translations = {
         politics: { label: 'Politics', value: 'Independent' },
         advocates: { label: 'Advocates for', value: 'Bitcoin &amp; animal rights' },
         runs: { label: 'Runs', value: 'Marathons' },
-        chess: { label: 'Plays', value: 'Chess · <a href="https://ratings.fide.com/profile/2949768" target="_blank" rel="noopener">FIDE Rapid 1736</a>' },
+        chess: { label: 'Plays', value: 'Chess · <a href="https://ratings.fide.com/profile/2949768" target="_blank" rel="noopener">FIDE Rapid 1736</a> · <a href="https://lichess.org/@/crazyjohny" target="_blank" rel="noopener">Lichess</a>' },
       },
     },
     values: {
@@ -88,7 +88,7 @@ const translations = {
         politics: { label: 'Политика', value: 'Независим' },
         advocates: { label: 'Застъпник за', value: 'Bitcoin и права на животните' },
         runs: { label: 'Тича', value: 'Маратони' },
-        chess: { label: 'Играе', value: 'Шахмат · <a href="https://ratings.fide.com/profile/2949768" target="_blank" rel="noopener">ФИДЕ рапид 1736</a>' },
+        chess: { label: 'Играе', value: 'Шахмат · <a href="https://ratings.fide.com/profile/2949768" target="_blank" rel="noopener">ФИДЕ рапид 1736</a> · <a href="https://lichess.org/@/crazyjohny" target="_blank" rel="noopener">Lichess</a>' },
       },
     },
     values: {
