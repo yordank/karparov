@@ -1,29 +1,42 @@
 # Лична визитка / портфолио
 
-Статичен сайт с чист HTML, CSS и JavaScript — без build стъпки.
+Сайт на **React** (с **Vite**). Публикува се автоматично в GitHub Pages чрез GitHub Actions.
 
 ## Стартиране локално
 
-Пусни лек сървър:
-
 ```bash
-python3 -m http.server 8000
+npm install
+npm run dev
 ```
 
-и отвори `http://localhost:8000`.
+и отвори адреса, който показва (обикновено `http://localhost:5173`).
+
+`npm run build` прави готовия сайт в папка `dist/`.
 
 ## Структура
 
 ```
-index.html      — съдържание и структура на страницата
-blog.html       — списък с всички статии
-post.html       — страница за една статия (post.html?p=<slug>)
-posts/          — статиите: posts.json (списък) + <slug>.md (текст)
-css/style.css   — стилове, светла/тъмна тема
-js/main.js      — превключване на тема и мобилно меню
-js/i18n.js      — преводи EN/BG
-js/blog.js      — зареждане и показване на статиите
+index.html               — входна HTML страница (meta тагове, шрифтове)
+src/main.jsx             — стартира React
+src/App.jsx              — общ layout и избор на страница
+src/context.jsx          — език (EN/BG), тема, навигация (#/blog)
+src/translations.js      — целият текст на сайта на английски и български
+src/pages/Home.jsx       — началната страница (секции, проекти)
+src/pages/BlogPage.jsx   — списък със статии
+src/pages/PostPage.jsx   — една статия
+src/components/          — Header, Footer, PostList
+src/posts.js             — зарежда статиите от posts/
+src/style.css            — стилове, светла/тъмна тема
+posts/                   — статиите: posts.json (списък) + <slug>.md (текст)
+public/                  — снимки, robots.txt, sitemap.xml
+.github/workflows/       — автоматично публикуване
 ```
+
+## Промени по съдържанието
+
+- Текстове: `src/translations.js` (двата езика един до друг).
+- Проекти: масивът `PROJECTS` в `src/pages/Home.jsx`.
+- Цветове: CSS променливите в `:root` в `src/style.css`.
 
 ## Нова статия в блога
 
@@ -48,14 +61,9 @@ js/blog.js      — зареждане и показване на статиит
 
 Последните 3 статии се показват и на началната страница.
 
-> Блогът зарежда статиите с `fetch`, затова при локален преглед пусни сървъра по-долу — при директно отваряне на файла статиите няма да се заредят.
-
-## Персонализиране
-
-- Заменѝ текста в `index.html` (име, роля, "За мен", проекти, контакти).
-- Цветовата тема (акцентен цвят и др.) се управлява през CSS променливите в `:root` в `css/style.css`.
-- Секция "Проекти" съдържа примерни карти — добави реални проекти и линкове.
+Адресът на статия е `https://yordank.github.io/karparov/#/blog/<slug>`.
 
 ## Публикуване
 
-Сайтът е статичен, така че може да се качи директно в GitHub Pages, Netlify, Vercel или всеки друг статичен хостинг.
+Всяко качване в основния клон пуска `.github/workflows/deploy.yml`. Той прави build и публикува в GitHub Pages.
+Еднократна настройка: **Settings → Pages → Source: GitHub Actions**.
