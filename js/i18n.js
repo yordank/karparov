@@ -49,7 +49,7 @@ const translations = {
       visitWebsite: 'Visit website →',
       copyTrading: { desc: 'A demo application for copy trading — automatically replicating trades across accounts.' },
       aiAssistant: { desc: 'An AI assistant for automated responses and tasks, built with JavaScript.' },
-      btcNotar: { desc: 'A web application for notarizing data via Bitcoin.' },
+      btcNotar: { desc: 'An open-source Node.js library for notarizing documents on Bitcoin. It batches hashes into a Merkle tree, anchors the root via OP_RETURN, and returns proofs anyone can verify on-chain.' },
       viewOnGithub: 'View on GitHub →',
     },
     contact: {
@@ -112,7 +112,7 @@ const translations = {
       visitWebsite: 'Към сайта →',
       copyTrading: { desc: 'Демонстрационно приложение за copy trading — автоматично реплициране на сделки между акаунти.' },
       aiAssistant: { desc: 'AI асистент за автоматизирани отговори и задачи, изграден с JavaScript.' },
-      btcNotar: { desc: 'Уеб приложение, свързано с нотариране на данни през Bitcoin.' },
+      btcNotar: { desc: 'Open-source Node.js библиотека за нотариране на документи в Bitcoin. Събира хешовете в Merkle дърво, записва корена чрез OP_RETURN и връща доказателства, които всеки може да провери в блокчейна.' },
       viewOnGithub: 'Виж в GitHub →',
     },
     contact: {
