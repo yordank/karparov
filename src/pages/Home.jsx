@@ -101,6 +101,7 @@ export default function Home() {
           <div className="about-photo-grid">
             <img src="assets/jordan-einstein.jpg" alt="Jordan sitting on a bench next to a bronze statue of Albert Einstein" loading="lazy" width="720" height="960" className="photo-einstein" />
             <img src="assets/jordan-chess.jpg" alt="Jordan sitting behind a wooden chess set" loading="lazy" width="640" height="640" />
+            <img src="assets/jordan-bitcoin-botev.jpg" alt="Jordan holding a Bitcoin flag next to the Botev Plovdiv mascot outside the stadium" loading="lazy" width="800" height="1267" className="photo-botev" />
           </div>
           <figcaption>{t('about.photoCaption')}</figcaption>
         </figure>

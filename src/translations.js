@@ -21,7 +21,7 @@ export const translations = {
     },
     about: {
       heading: 'About',
-      photoCaption: 'On a bench with Einstein, and behind the chessboard.',
+      photoCaption: 'On a bench with Einstein, behind the chessboard, and with the Bitcoin flag at Botev Plovdiv — when Botev was the Bitcoin club.',
       text: "I'm Jordan — a software developer based in Bulgaria who believes technology, personal responsibility, and clear principles go hand in hand. I'm a strong advocate for Bitcoin and sound money, I care deeply about animal rights, and I stay politically independent — judging issues on their merits, not on party lines. Outside of code, you'll usually find me training for the next marathon or sitting behind a chessboard.",
       facts: {
         basedIn: { label: 'Based in', value: 'Plovdiv, Bulgaria' },
@@ -82,7 +82,7 @@ export const translations = {
     },
     about: {
       heading: 'За мен',
-      photoCaption: 'На пейка с Айнщайн и зад шахматната дъска.',
+      photoCaption: 'На пейка с Айнщайн, зад шахматната дъска и с биткойн знамето на стадиона на Ботев Пловдив — когато Ботев беше биткойн отборът.',
       text: 'Аз съм Йордан — софтуерен разработчик от България, който вярва, че технологиите, личната отговорност и ясните принципи вървят ръка за ръка. Твърдо подкрепям Bitcoin и стабилните пари, дълбоко ме вълнуват правата на животните, и оставам политически независим — преценявам всеки въпрос по същество, а не по партийна линия. Извън кода обикновено ме намираш да тренирам за следващия маратон или зад шахматната дъска.',
       facts: {
         basedIn: { label: 'Базиран в', value: 'Пловдив, България' },
@@ -143,7 +143,7 @@ export const translations = {
     },
     about: {
       heading: 'Обо мне',
-      photoCaption: 'На скамейке с Эйнштейном и за шахматной доской.',
+      photoCaption: 'На скамейке с Эйнштейном, за шахматной доской и с флагом Bitcoin у стадиона «Ботев Пловдив» — когда Ботев был биткоин-клубом.',
       text: 'Я Йордан — разработчик программного обеспечения из Болгарии. Я верю, что технологии, личная ответственность и ясные принципы идут рука об руку. Я убеждённый сторонник Bitcoin и надёжных денег, мне очень важны права животных, и я остаюсь политически независимым — сужу о каждом вопросе по существу, а не по партийной линии. Вне работы с кодом я обычно готовлюсь к следующему марафону или сижу за шахматной доской.',
       facts: {
         basedIn: { label: 'Живу в', value: 'Пловдив, Болгария' },
@@ -204,7 +204,7 @@ export const translations = {
     },
     about: {
       heading: 'Про мене',
-      photoCaption: 'На лавці з Ейнштейном і за шаховою дошкою.',
+      photoCaption: 'На лавці з Ейнштейном, за шаховою дошкою і з прапором Bitcoin біля стадіону «Ботев Пловдив» — коли Ботев був біткоїн-клубом.',
       text: 'Я Йордан — розробник програмного забезпечення з Болгарії. Я вірю, що технології, особиста відповідальність і чіткі принципи йдуть пліч-о-пліч. Я переконаний прихильник Bitcoin і надійних грошей, мені дуже важливі права тварин, і я залишаюся політично незалежним — оцінюю кожне питання по суті, а не за партійною лінією. Поза кодом я зазвичай готуюся до наступного марафону або сиджу за шаховою дошкою.',
       facts: {
         basedIn: { label: 'Живу в', value: 'Пловдив, Болгарія' },

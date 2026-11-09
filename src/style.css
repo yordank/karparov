@@ -346,7 +346,7 @@ section { padding-block: 88px; }
 
 /* ---------- About ---------- */
 .about-photo { margin: 0 0 44px; }
-.about-photo-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.about-photo-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
 .about-photo img {
   width: 100%;
   height: auto;
@@ -355,6 +355,7 @@ section { padding-block: 88px; }
   border-radius: var(--r-lg);
 }
 .about-photo .photo-einstein { object-position: center 70%; }
+.about-photo .photo-botev { object-position: center 72%; }
 .about-photo figcaption { margin-top: 12px; font-size: 0.88rem; color: var(--text-muted); }
 
 .about-grid {
@@ -639,6 +640,7 @@ a.project-link[target="_blank"]::after {
   section { padding-block: 64px; }
   .hero-board { max-width: 240px; }
   .about-photo-grid { grid-template-columns: 1fr 1fr; gap: 10px; }
+  .about-photo .photo-botev { grid-column: 1 / -1; aspect-ratio: 1; }
   .about-photo img { border-radius: var(--r-md); }
   .values-grid { grid-template-columns: 1fr; }
   .skills-grid { grid-template-columns: 1fr; }
