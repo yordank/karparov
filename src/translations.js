@@ -1,4 +1,4 @@
-// All site text. Languages: English, Bulgarian, Russian, Ukrainian.
+// All site text. Languages: English, Bulgarian, Russian, Ukrainian, German.
 // To change text, edit it here — every language sits under its own code.
 
 export const LANGUAGES = [
@@ -6,6 +6,7 @@ export const LANGUAGES = [
   { code: 'bg', short: 'BG', name: 'Български', locale: 'bg-BG' },
   { code: 'ru', short: 'RU', name: 'Русский', locale: 'ru-RU' },
   { code: 'uk', short: 'UA', name: 'Українська', locale: 'uk-UA' },
+  { code: 'de', short: 'DE', name: 'Deutsch', locale: 'de-DE' },
 ];
 
 export const translations = {
@@ -63,7 +64,7 @@ export const translations = {
       back: 'All posts',
       notFound: 'This post does not exist. Go back to the list of posts.',
       empty: 'No posts yet.',
-      written: { bg: 'This post is written in Bulgarian.', en: 'This post is written in English.', ru: 'This post is written in Russian.', uk: 'This post is written in Ukrainian.' },
+      written: { bg: 'This post is written in Bulgarian.', en: 'This post is written in English.', ru: 'This post is written in Russian.', uk: 'This post is written in Ukrainian.', de: 'This post is written in German.' },
     },
     contact: { heading: 'Contact', lead: "Have a project or idea? Write to me — I'd be glad to talk about it." },
     footer: { name: 'Jordan Karparov', rights: 'All rights reserved.', backToTop: 'Back to top' },
@@ -124,7 +125,7 @@ export const translations = {
       back: 'Всички статии',
       notFound: 'Тази статия не съществува. Върни се към списъка със статии.',
       empty: 'Все още няма статии.',
-      written: { bg: 'Статията е на български.', en: 'Статията е на английски.', ru: 'Статията е на руски.', uk: 'Статията е на украински.' },
+      written: { bg: 'Статията е на български.', en: 'Статията е на английски.', ru: 'Статията е на руски.', uk: 'Статията е на украински.', de: 'Статията е на немски.' },
     },
     contact: { heading: 'Контакти', lead: 'Имаш проект или идея? Пиши ми — с удоволствие ще го обсъдим.' },
     footer: { name: 'Йордан Карпаров', rights: 'Всички права запазени.', backToTop: 'Нагоре' },
@@ -185,7 +186,7 @@ export const translations = {
       back: 'Все статьи',
       notFound: 'Такой статьи нет. Вернитесь к списку статей.',
       empty: 'Статей пока нет.',
-      written: { bg: 'Статья написана на болгарском.', en: 'Статья написана на английском.', ru: 'Статья написана на русском.', uk: 'Статья написана на украинском.' },
+      written: { bg: 'Статья написана на болгарском.', en: 'Статья написана на английском.', ru: 'Статья написана на русском.', uk: 'Статья написана на украинском.', de: 'Статья написана на немецком.' },
     },
     contact: { heading: 'Контакты', lead: 'Есть проект или идея? Напишите мне — с удовольствием обсудим.' },
     footer: { name: 'Йордан Карпаров', rights: 'Все права защищены.', backToTop: 'Наверх' },
@@ -246,10 +247,71 @@ export const translations = {
       back: 'Усі статті',
       notFound: 'Такої статті немає. Поверніться до списку статей.',
       empty: 'Статей поки немає.',
-      written: { bg: 'Статтю написано болгарською.', en: 'Статтю написано англійською.', ru: 'Статтю написано російською.', uk: 'Статтю написано українською.' },
+      written: { bg: 'Статтю написано болгарською.', en: 'Статтю написано англійською.', ru: 'Статтю написано російською.', uk: 'Статтю написано українською.', de: 'Статтю написано німецькою.' },
     },
     contact: { heading: 'Контакти', lead: 'Маєте проєкт чи ідею? Напишіть мені — із задоволенням обговоримо.' },
     footer: { name: 'Йордан Карпаров', rights: 'Усі права захищено.', backToTop: 'Нагору' },
     ui: { language: 'Мова', toggleTheme: 'Змінити тему', openMenu: 'Відкрити меню' },
+  },
+
+  de: {
+    nav: { about: 'Über mich', values: 'Werte', skills: 'Fähigkeiten', projects: 'Projekte', blog: 'Blog', contact: 'Kontakt', initials: ['J', 'K'] },
+    hero: {
+      eyebrow: 'Hallo, ich bin',
+      name: 'Jordan Karparov',
+      role: 'Entwickler, Bitcoin-Befürworter, Marathonläufer und Schachspieler',
+      text: 'Ich entwickle Software, laufe lange Strecken, spiele Schach und setze mich für dezentrales Geld und Tierrechte ein. Politisch unabhängig, konsequent in meinen Prinzipien.',
+      viewProjects: 'Projekte ansehen',
+      getInTouch: 'Kontakt aufnehmen',
+    },
+    about: {
+      heading: 'Über mich',
+      photoCaption: 'Auf einer Bank mit Einstein, am Schachbrett und mit der Bitcoin-Flagge bei Botev Plovdiv — als Botev der Bitcoin-Klub war.',
+      text: 'Ich bin Jordan — Softwareentwickler aus Bulgarien. Ich glaube, dass Technologie, Eigenverantwortung und klare Prinzipien zusammengehören. Ich bin überzeugter Befürworter von Bitcoin und solidem Geld, Tierrechte liegen mir sehr am Herzen, und ich bleibe politisch unabhängig — ich beurteile jede Frage nach der Sache, nicht nach Parteilinie. Abseits des Codes trainiere ich meist für den nächsten Marathon oder sitze am Schachbrett.',
+      facts: {
+        basedIn: { label: 'Wohnort', value: 'Plowdiw, Bulgarien' },
+        politics: { label: 'Politik', value: 'Unabhängig' },
+        advocates: { label: 'Setzt sich ein für', value: 'Bitcoin und Tierrechte' },
+        runs: { label: 'Läuft', value: 'Marathons' },
+        chess: { label: 'Spielt', value: 'Schach', fide: 'FIDE Schnellschach 1736' },
+      },
+    },
+    values: {
+      heading: 'Wofür ich stehe',
+      bitcoin: { title: 'Bitcoin', desc: 'Solides, dezentrales Geld — frei von politischer Kontrolle und Zentralbanken.' },
+      animalRights: { title: 'Tierrechte', desc: 'Ethischer Umgang mit Tieren und ein stärkerer gesetzlicher Schutz für sie.' },
+      independent: { title: 'Politisch unabhängig', desc: 'Keine Parteizugehörigkeit. Jede Frage wird nach der Sache beurteilt, nicht nach Lagerdenken.' },
+      marathon: { title: 'Marathonläufer', desc: 'Training und Wettkämpfe auf langen Strecken — Disziplin, Kilometer für Kilometer erarbeitet.' },
+    },
+    skills: {
+      heading: 'Fähigkeiten',
+      frontend: { title: 'Frontend', desc: 'HTML, CSS, JavaScript, React' },
+      backend: { title: 'Backend', desc: 'Node.js, API-Design, Datenbanken' },
+      tools: { title: 'Werkzeuge', desc: 'Git, Docker, CI/CD' },
+      design: { title: 'Design', desc: 'UI/UX-Grundlagen, responsives Design' },
+    },
+    projects: {
+      heading: 'Projekte',
+      latest: 'Neuestes Projekt',
+      tofiQuant: { desc: 'Quant-Trading — eine systematische, regelbasierte Strategie auf ApeX Omni Perpetual Futures, betrieben als nicht-verwahrender On-Chain-Vault, aus dem du jederzeit abheben kannst.' },
+      visitWebsite: 'Zur Website',
+      copyTrading: { desc: 'Eine Demo-Anwendung für Copy-Trading — Trades werden automatisch zwischen Konten übernommen.' },
+      aiAssistant: { desc: 'Ein KI-Assistent für automatische Antworten und Aufgaben, entwickelt mit JavaScript.' },
+      btcNotar: { desc: 'Eine Open-Source-Bibliothek für Node.js zur Notarisierung von Dokumenten auf Bitcoin. Sie fasst Hashes in einem Merkle-Baum zusammen, verankert die Wurzel per OP_RETURN und liefert Nachweise, die jeder on-chain prüfen kann.' },
+      viewOnGithub: 'GitHub',
+    },
+    blog: {
+      heading: 'Blog',
+      lead: 'Gedanken zu Bitcoin, Trading, Code, Laufen und Schach — die neuesten zuerst.',
+      all: 'Alle Beiträge',
+      readMore: 'Lesen',
+      back: 'Alle Beiträge',
+      notFound: 'Diesen Beitrag gibt es nicht. Geh zurück zur Liste der Beiträge.',
+      empty: 'Noch keine Beiträge.',
+      written: { bg: 'Dieser Beitrag ist auf Bulgarisch.', en: 'Dieser Beitrag ist auf Englisch.', ru: 'Dieser Beitrag ist auf Russisch.', uk: 'Dieser Beitrag ist auf Ukrainisch.', de: 'Dieser Beitrag ist auf Deutsch.' },
+    },
+    contact: { heading: 'Kontakt', lead: 'Du hast ein Projekt oder eine Idee? Schreib mir — ich spreche gern darüber.' },
+    footer: { name: 'Jordan Karparov', rights: 'Alle Rechte vorbehalten.', backToTop: 'Nach oben' },
+    ui: { language: 'Sprache', toggleTheme: 'Design wechseln', openMenu: 'Menü öffnen' },
   },
 };
